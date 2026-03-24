@@ -14,7 +14,7 @@ Manual attendance tracking in educational institutions is often inefficient, hum
 
 ## Core Features
 
-- 
+- Student Record Management: Add, update, and delete student profiles with unique identifiers.
 - 
 - 
 
