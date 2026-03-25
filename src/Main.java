@@ -14,10 +14,6 @@ abstract class Person {
     }
    public abstract void displayInfo();
 }
-public class Main {
-    public static void main(String[] args) {
-  }
-}
 class Student extends Person {
     private int totalClasses;
     private int attendedClasses;
@@ -43,4 +39,27 @@ class Student extends Person {
                    " | Attendance: " + attendedClasses + "/" + totalClasses + 
                    " (" + getAttendancePercentage() + "%)");
     }
+}
+class AttendanceManager {
+    private List<Student> students;
+
+    public AttendanceManager() {
+        students = new ArrayList<>();
+    }
+
+    public void addStudent(String id, String name) {
+        students.add(new Student(id, name));
+        System.out.println("Student added successfully!");
+    }
+
+    public void markDailyAttendance(Scanner scanner) {
+        if (students.isEmpty()) {
+            System.out.println("No students in the system.");
+            return;
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+  }
 }
