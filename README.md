@@ -9,15 +9,14 @@ Student Attendance Management System
 ---
 Manual attendance tracking in educational institutions is often inefficient, human error and lacks real-time accessibility. Educators frequently struggle with maintaining physical registers or static spreadsheets that do not provide instant analytics on student participation. The proposed system addresses these issues by utilizing a structured object-oriented hierarchy to model students and attendance records. By automating the calculation of attendance percentages and providing instant report generation, the system ensures data integrity, reduces administrative workload, and offers clear visibility into student performance trends.
 ## Target User
-
 ---
-
+To add students to the database and perform a daily "roll call" through the console. To view comprehensive attendance reports and identify students with low participation.
 ## Core Features
 
 - Student Record Management: Add, update, and delete student profiles with unique identifiers.
-- 
-- 
-
+-  Real-Time Analytics: Automatic calculation of attendance percentages for every student.
+- Robust Exception Handling: Validation for user inputs and data processing errors.
+- Persistent Data Storage: Ability to save and load student records for long-term tracking.
 ---
 
 ## OOP Concepts Used
