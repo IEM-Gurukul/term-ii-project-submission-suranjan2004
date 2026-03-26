@@ -57,7 +57,22 @@ class AttendanceManager {
             System.out.println("No students in the system.");
             return;
         }
+         System.out.println("\n--- Marking Attendance ---");
+        for (Student student : students) {
+            while (true) {
+                try {
+                    System.out.print("Is " + student.getName() + " (ID: " + student.getId() + ") present? (y/n): ");
+                    String input = scanner.nextLine().trim().toLowerCase();
+                    if (!input.equals("y") && !input.equals("n")) {
+                        throw new Exception("Invalid input! Enter 'y' or 'n'.");
+                    }
+                    student.markAttendance(input.equals("y"));
+                    break;
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                }
     }
+    System.out.println("Attendance marked for all students.");        
 }
 public class Main {
     public static void main(String[] args) {
