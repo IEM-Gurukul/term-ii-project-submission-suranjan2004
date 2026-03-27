@@ -74,6 +74,17 @@ class AttendanceManager {
     }
     System.out.println("Attendance marked for all students.");        
 }
+ public void generateReport() {
+        System.out.println("\n--- Attendance Report ---");
+        if (students.isEmpty()) {
+            System.out.println("No records found.");
+            return;
+        }
+        for (Student student : students) {
+            student.displayInfo();
+        }
+    }
+}
 public class Main {
     public static void main(String[] args) {
   }
