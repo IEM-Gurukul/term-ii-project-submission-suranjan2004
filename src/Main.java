@@ -72,6 +72,7 @@ class AttendanceManager {
     }
     System.out.println("Attendance marked for all students.");        
 }
+}
  public void generateReport() {
         System.out.println("\n--- Attendance Report ---");
         if (students.isEmpty()) {
@@ -86,6 +87,8 @@ class AttendanceManager {
 public class Main {
     public static void main(String[] args) {
          System.out.println("Welcome to the Student Attendance System");
+         AttendanceManager manager = new AttendanceManager();
+         Scanner scanner = new Scanner(System.in);
 
         while (true) {
             try {
