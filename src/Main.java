@@ -94,9 +94,7 @@ public class Main {
                 System.out.println("3. View Attendance Report");
                 System.out.println("4. Exit");
                 System.out.print("Choose an option: ");
-
                 int choice = Integer.parseInt(scanner.nextLine());
-
                 switch (choice) {
                     case 1:
                         try {
