@@ -21,18 +21,18 @@ To add students to the database and perform a daily "roll call" through the cons
 
 ## OOP Concepts Used
 
-- Abstraction:
-- Inheritance:
-- Polymorphism:
-- Exception Handling:
-- Collections / Threads:
+- Abstraction:Abstract Person class defining shared behaviors and attributes like id and name.
+- Inheritance:Specialized Student subclass extending the Person class to include attendance-specific data.
+- Polymorphism:displayInfo() is overridden in Student.
+- Exception Handling:try-catch handles invalid input and errors.
+- Collections / Threads:ArrayList stores students; threads not used.
 
 ---
 
 ## Proposed Architecture Description
 
 ---
-
+The system follows a layered architecture with clear separation of concerns. The Person abstract class represents the base entity, extended by Student to handle attendance logic. AttendanceManager acts as the service layer, managing student data and operations using an ArrayList. The Main class serves as the presentation layer, handling user interaction through a menu-driven interface. Data flows from user input to business logic and back as output, ensuring modularity, maintainability, and scalability.
 ## How to Run
 
 ---
