@@ -36,6 +36,8 @@ The system follows a layered architecture with clear separation of concerns. The
 ## How to Run
 
 ---
-
+Open project in Vscode
+Mark src as Sources Root
+Run Main.java
 ## Git Discipline Notes
 Minimum 10 meaningful commits required.
